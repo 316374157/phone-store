@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.phj.phonestore.dao.PhoneMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.phj.phonestore.po.Phone">
+        <id column="phone_id" property="phoneId" />
+        <result column="phone_name" property="phoneName" />
+        <result column="phone_price" property="phonePrice" />
+        <result column="phone_desc" property="phoneDesc" />
+        <result column="phone_stock" property="phoneStock" />
+        <result column="phone_icon" property="phoneIcon" />
+        <result column="category_type" property="categoryType" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="phone_tag" property="phoneTag" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        phone_id, phone_name, phone_price, phone_desc, phone_stock, phone_icon, category_type, create_time, update_time, phone_tag
+    </sql>
+
+</mapper>
